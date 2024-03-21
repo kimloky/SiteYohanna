@@ -37,7 +37,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-left: 20px;
+    margin-left: 36px;
 }
 
 nav ul li a {
@@ -45,11 +45,18 @@ nav ul li a {
     text-decoration: none;
 }
 
-#banner {
-    background: url('banner.jpg') center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
+.banner-content {
+    display: flex;
+    align-items: center;
+}
+
+.banner-content img {
+    width: 40%; /* Define a largura da imagem */
+    margin-right: 200px; /* Adiciona um espaçamento à direita da imagem */
+}
+
+.text {
+    flex: 1; /* Ocupa o restante do espaço disponível */
 }
 
 #banner h2 {
@@ -57,17 +64,7 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-.btn {
-    display: inline-block;
-    background: #696868;
+#banner p {
     color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-.btn:hover {
-    background: #000000;
-    color: #ffffff;
+    margin-bottom: 400px;
 }
